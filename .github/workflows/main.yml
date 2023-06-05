@@ -29,3 +29,12 @@ jobs:
           tags: | 
             gabrielmaikon/pizzaria:v1
             gabrielmaikon/pizzaria:latest
+            
+      - uses: php-actions/composer@v6
+      
+      - name: PHPUnit Tests
+        uses: php-actions/phpunit@master
+        with:
+          bootstrap: vendor/autoload.php
+          configuration: phpunit.xml
+          args: --coverage-text

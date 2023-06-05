@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "sua_senha";
+$password = "toonworld24";
 $dbname = "sistema_da_pizzaria";
 $port = 3306;
 
