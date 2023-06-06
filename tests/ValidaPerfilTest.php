@@ -6,12 +6,6 @@ require_once './conexaoBD.php';
 
 class ValidaPerfilTest extends TestCase
 {
-    // Simular a função de conexão com o banco de dados
-    function conexao()
-    {
-        return $this->createMock(mysqli::class);
-    }
-
     public function testPerfilPermitido()
     {
         // Definir o cargo ID
