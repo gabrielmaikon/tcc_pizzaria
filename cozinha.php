@@ -125,8 +125,8 @@ $background = array(
             <table class="table table-bg pedido-cliente">
                 <thead>
                     <tr>
-                        <th scope="col" class="text-center" style="background-color: lightblue">A fazer</th>
-                        <th scope="col" class="text-center" style="background-color: lightgray">Em Preparo</th>
+                        <th scope="col" class="text-center" style="background-color: lightgray">A fazer</th>
+                        <th scope="col" class="text-center" style="background-color: yellow">Em Preparo</th>
                         <th scope="col" class="text-center" style="background-color: #60fa41">Pronto</th>
                     </tr>
                 </thead>
@@ -140,11 +140,11 @@ $background = array(
 
                     while ($user_data = mysqli_fetch_assoc($result)) {
                         if ($user_data['status'] === 'A Fazer') {
-                            array_push($status['A Fazer'], $user_data['id']);
+                            array_push($status['A Fazer'], $user_data['numero']);
                         } elseif ($user_data['status'] === 'Em Preparo') {
-                            array_push($status['Em Preparo'], $user_data['id']);
+                            array_push($status['Em Preparo'], $user_data['numero']);
                         } elseif ($user_data['status'] === 'Pronto') {
-                            array_push($status['Pronto'], $user_data['id']);
+                            array_push($status['Pronto'], $user_data['numero']);
                         }
                     }
                     ?>

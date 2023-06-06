@@ -6,7 +6,7 @@ require_once('conexaoBD.php');
 
 session_start();
 
-// validaPerfil($_SESSION['cargo_id']);
+validaPerfil($_SESSION['cargo_id']);
 
 $sqlCargo = "SELECT id, nome FROM cargo";
 $getCargo = $conexao->query($sqlCargo);
