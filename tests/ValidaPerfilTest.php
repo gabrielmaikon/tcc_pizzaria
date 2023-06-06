@@ -2,8 +2,6 @@
 
 use PHPUnit\Framework\TestCase;
 
-require_once './conexaoBD.php';
-
 class ValidaPerfilTest extends TestCase
 {
     public function testPerfilPermitido()
